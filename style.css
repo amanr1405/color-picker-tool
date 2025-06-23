@@ -6,6 +6,17 @@
     font-weight: 900;
 }
 
+a{
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #101010;
+    transition: 0.2s all;
+    text-shadow: 0px 2px 20px #f5f5f5;
+}
+
 body{
     width: 100vw;
     height: 100vh;
