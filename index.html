@@ -31,21 +31,44 @@
 </body>
 
 <script>
+
+    let currColor="#212121"
+
     function color1(){
         document.body.style.backgroundColor="#F7DB58";
         document.querySelector('.container1').style.color="#F7DB58";
+
+        document.getElementById('result').innerHTML="#F7DB58"
+        
+        currColor="#F7DB58"
     }
     function color2(){
         document.body.style.backgroundColor="#7A4ED9";
         document.querySelector('.container1').style.color="#7A4ED9";
+
+        document.getElementById('result').innerHTML="#7A4ED9"
+
+        currColor="#7A4ED9"
+        
     }
     function color3(){
         document.body.style.backgroundColor="#5AE881";
         document.querySelector('.container1').style.color="#5AE881";
+
+        document.getElementById('result').innerHTML="#5AE881"
+
+        currColor="#5AE881"
+
+
     }
     function color4(){
         document.body.style.backgroundColor="#ED584E";
         document.querySelector('.container1').style.color="#ED584E";
+
+        document.getElementById('result').innerHTML="#ED584E"
+
+        currColor=="#ED584E"
+
     }
     function reset(){
         document.body.style.backgroundColor="#212121";
@@ -56,7 +79,6 @@
     }
     
 
-    let currColor="#212121"
     function random_color(){
         const ran = Math.floor(Math.random()*(100000-999999+1))+999999
         
