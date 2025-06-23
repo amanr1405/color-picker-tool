@@ -10,32 +10,45 @@
     <div class="master">
         <div class="container1">
             <h1>Select the color</h1>
+            <button class="colorRandom" onclick="random_color()">Random</button>
+            <button class="reset" onclick="reset()">Reset</button>
+
         </div>
         <div class="container2">
-            <button class="blue" onclick="blue()"></button>
-            <button class="green" onclick="green()"></button>
-            <button class="white" onclick="white()"></button>
-            <button class="red" onclick="red()"></button>
-            <button class="reset" onclick="reset()">Reset</button>
+            <button class="color1" onclick="color1()"></button>
+            <button class="color2" onclick="color2()"></button>
+            <button class="color3" onclick="color3()"></button>
+            <button class="color4" onclick="color4()"></button>
         </div>
     </div>
 </body>
 
 <script>
-    function blue(){
-        document.body.style.backgroundColor="blue";
+    function color1(){
+        document.body.style.backgroundColor="#F7DB58";
+        document.querySelector('.container1').style.color="#F7DB58";
     }
-    function white(){
-        document.body.style.backgroundColor="white";
+    function color2(){
+        document.body.style.backgroundColor="#7A4ED9";
+        document.querySelector('.container1').style.color="#7A4ED9";
     }
-    function green(){
-        document.body.style.backgroundColor="green";
+    function color3(){
+        document.body.style.backgroundColor="#5AE881";
+        document.querySelector('.container1').style.color="#5AE881";
     }
-    function red(){
-        document.body.style.backgroundColor="red";
+    function color4(){
+        document.body.style.backgroundColor="#ED584E";
+        document.querySelector('.container1').style.color="#ED584E";
     }
     function reset(){
         document.body.style.backgroundColor="#212121";
+        document.querySelector('.container1').style.color="#f5f5f5";
+    }
+    function random_color(){
+        const ran = Math.floor(Math.random()*(100000-999999+1))+999999
+        console.log(ran)
+        document.body.style.backgroundColor="#"+ran.toString();
+        document.querySelector('.container1').style.color="#"+ran.toString();
     }
 </script>
 </html>
