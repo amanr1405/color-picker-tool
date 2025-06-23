@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Picker Tool</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="master">
+        <div class="container1">
+            <h1>Select the color</h1>
+        </div>
+        <div class="container2">
+            <button class="blue" onclick="blue()"></button>
+            <button class="green" onclick="green()"></button>
+            <button class="white" onclick="white()"></button>
+            <button class="red" onclick="red()"></button>
+            <button class="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
 </body>
+
+<script>
+    function blue(){
+        document.body.style.backgroundColor="blue";
+    }
+    function white(){
+        document.body.style.backgroundColor="white";
+    }
+    function green(){
+        document.body.style.backgroundColor="green";
+    }
+    function red(){
+        document.body.style.backgroundColor="red";
+    }
+    function reset(){
+        document.body.style.backgroundColor="#212121";
+    }
+</script>
 </html>
